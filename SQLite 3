@@ -1,0 +1,7 @@
+ ** Test database sechema **
+ .\sqlite3.exe test.db
+ 
+ ** Tables: keyword_list, resources and features ***
+ CREATE TABLE keyword_list(id integer primary key, keyword varchar); 
+ create table resources(id integer primary key, name varchar, web_address varchar); 
+ create table features(id integer primary key, frequency integer);

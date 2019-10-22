@@ -2,6 +2,6 @@
  .\sqlite3.exe test.db
  
  ** Tables: keyword_list, resources and features ***
- CREATE TABLE keyword_list(id integer primary key, keyword varchar); 
- create table resources(id integer primary key, name varchar, web_address varchar); 
- create table features(id integer primary key, frequency integer);
+CREATE TABLE if not exists keywords_list (id integer PRIMARY KEY AUTOINCREMENT, keyword varchar
+CREATE TABLE if not exists features (id integer PRIMARY KEY AUTOINCREMENT, keyword varchar, date text, frequency integer
+CREATE TABLE if not exists resources (id integer PRIMARY KEY AUTOINCREMENT, name text, webaddress varchar
